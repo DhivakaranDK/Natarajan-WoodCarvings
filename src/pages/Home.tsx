@@ -3,11 +3,13 @@ import { useCountUp } from '../hooks/useScrollReveal';
 import { products } from '../data/products';
 import './Home.css';
 
+const ganeshaStatIcon = '/images/icons/ganesha-photo-icon.png';
+
 const stats = [
-  { value: 40, suffix: '+', label: 'Years of Heritage', icon: '🏛️' },
-  { value: 10000, suffix: '+', label: 'Statues Crafted', icon: '🪵' },
-  { value: 500, suffix: '+', label: 'Statue Varieties', icon: '🗿' },
-  { value: 50, suffix: '+', label: 'Countries Shipped', icon: '🌍' },
+  { value: 40, suffix: '+', label: 'Years of Heritage', icon: '\uD83C\uDFDB\uFE0F' },
+  { value: 10000, suffix: '+', label: 'Statues Crafted', iconSrc: ganeshaStatIcon },
+  { value: 500, suffix: '+', label: 'Statue Varieties', iconSrc: ganeshaStatIcon },
+  { value: 50, suffix: '+', label: 'Countries Shipped', icon: '\uD83C\uDF0D' },
 ];
 
 const featuredProducts = products.slice(0, 6);
@@ -22,18 +24,19 @@ export default function Home() {
           <div className="hero__bg-overlay"></div>
         </div>
         <div className="container hero__content">
-          <div className="hero__badges">
-            <span className="badge badge-gold">🏆 Poompuhar Award Winner</span>
-            <span className="badge badge-gold">📍 GI Tagged Craft — 2021</span>
-          </div>
           <h1 className="hero__title">
             <span className="hero__title-line">Natarajan</span>
             <span className="hero__title-line gold-shimmer">WoodCarvings®</span>
           </h1>
+          <div className="hero__badges">
+            <span className="badge badge-gold">📍 GI Tagged Craft — 2021</span>
+            <span className="badge badge-gold">🏆 Poompuhar Award Winner</span>
+          </div>
           <p className="hero__subtitle">Handcrafted Heritage Since 1985</p>
           <p className="hero__desc">
-            Premium handcarved wooden statues and panels from the artisan tradition of
-            Kallakurichi, Tamil Nadu. Each piece tells a story spanning the Chola dynasty to the present.
+            Discover premium, handcrafted wooden masterpieces from the heart of Kallakurichi with Natarajan
+            Woodcarvings. As GI-tagged artisans and Poompuhar Award winners we preserve centuries of Tamil
+            heritage in every meticulously carved detail.
           </p>
           <div className="hero__cta">
             <Link to="/products" className="btn btn-gold btn-lg">Explore Products</Link>
@@ -152,11 +155,25 @@ export default function Home() {
   );
 }
 
-function StatCard({ value, suffix, label, icon }: { value: number; suffix: string; label: string; icon: string }) {
+function StatCard({
+  value,
+  suffix,
+  label,
+  icon,
+  iconSrc,
+}: {
+  value: number;
+  suffix: string;
+  label: string;
+  icon?: string;
+  iconSrc?: string;
+}) {
   const { count, ref } = useCountUp(value, 2000);
   return (
     <div className="stat-card" ref={ref}>
-      <span className="stat-card__icon">{icon}</span>
+      <span className={`stat-card__icon${iconSrc ? ' stat-card__icon--image' : ''}`} aria-hidden="true">
+        {iconSrc ? <img src={iconSrc} alt="" loading="lazy" /> : icon}
+      </span>
       <span className="stat-card__value">{count.toLocaleString()}{suffix}</span>
       <span className="stat-card__label">{label}</span>
     </div>

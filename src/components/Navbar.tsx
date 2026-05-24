@@ -37,6 +37,7 @@ export default function Navbar() {
           <div className="navbar__logo-text">
             <span className="navbar__brand">Natarajan</span>
             <span className="navbar__sub">WoodCarvings®</span>
+            <span className="navbar__since">Since 1985</span>
           </div>
         </Link>
 

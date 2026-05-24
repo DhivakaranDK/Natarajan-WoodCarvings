@@ -6,23 +6,6 @@ export default function Footer() {
     <footer className="footer" id="site-footer">
       <div className="footer__top">
         <div className="container footer__grid">
-          <div className="footer__brand">
-            <div className="footer__logo">
-              <img src="/images/logo.png" alt="Natarajan WoodCarvings Logo" className="footer__logo-img" />
-              <div>
-                <h3 className="footer__title">Natarajan WoodCarvings®</h3>
-                <p className="footer__tagline">Handcrafted Heritage Since 1985</p>
-              </div>
-            </div>
-            <p className="footer__desc">
-              Master artisans crafting exquisite wooden statues and panels from Tamil Nadu.
-              GI-tagged craftsmanship exported worldwide.
-            </p>
-            <div className="footer__badges">
-              <span className="badge badge-gold">🏆 Poompuhar Award</span>
-              <span className="badge badge-gold">📍 GI Tagged 2021</span>
-            </div>
-          </div>
           <div className="footer__nav">
             <h4 className="footer__heading">Quick Links</h4>
             <ul>

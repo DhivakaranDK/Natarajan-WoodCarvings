@@ -6,7 +6,7 @@ const craftSteps = [
     step: 1,
     title: 'Selecting Premium Timber',
     desc: 'Every masterpiece begins with the right wood. Our experts handpick seasoned Rain Tree, Teak, Temple Plant, Fig, Indian Kino Tree, and Mahogany logs — inspecting grain, density, and natural character to ensure each block is worthy of becoming a divine sculpture.',
-    image: '/images/process/step-1-wood-selection.png',
+    image: '/images/process/step-1-wood-selection-hands.png',
   },
   {
     step: 2,
@@ -18,7 +18,7 @@ const craftSteps = [
     step: 3,
     title: 'Rough Carving & Shaping',
     desc: 'Using traditional chisels and mallets, the raw timber block is carefully transformed into its foundational form. This stage demands both strength and vision as the sculptor reveals the deity hidden within the wood.',
-    image: '/images/process/step-3-rough-shaping.png',
+    image: '/images/process/step-3-rough-shaping-hands.png',
   },
   {
     step: 4,
@@ -30,13 +30,13 @@ const craftSteps = [
     step: 5,
     title: 'Sculpting Divine Expressions',
     desc: 'The most sacred step — breathing life into the deity\'s face. Using precision micro-tools, the artisan sculpts serene expressions, gentle smiles, and compassionate eyes that radiate spiritual grace.',
-    image: '/images/process/step-5-face-sculpting.png',
+    image: '/images/process/step-5-face-sculpting-hands.png',
   },
   {
     step: 6,
     title: 'Sanding & Smoothing',
     desc: 'Multiple rounds of hand-sanding with progressively finer grits create a flawless, silk-smooth surface. Every curve is refined, every edge perfected — preparing the sculpture for its final transformation.',
-    image: '/images/process/step-6-sanding-finishing.png',
+    image: '/images/process/step-6-sanding-finishing-hands.png',
   },
   {
     step: 7,
@@ -48,7 +48,7 @@ const craftSteps = [
     step: 8,
     title: 'Final Showcase & Delivery',
     desc: 'Every completed piece undergoes rigorous quality inspection before being proudly displayed. From our workshop in Kallakurichi to your sacred space — each sculpture is custom-packed and shipped worldwide with care.',
-    image: '/images/process/step-8-final-showcase-delivery.png',
+    image: '/images/process/step-8-final-showcase-delivery-hands.png',
   },
 ];
 
