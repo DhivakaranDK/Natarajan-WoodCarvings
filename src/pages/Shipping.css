@@ -2,10 +2,10 @@
 
 .shipping-hero {
   text-align: center;
-  padding: var(--space-16) 0 var(--space-10);
+  padding: var(--space-8) 0 var(--space-6);
   background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-parchment) 100%);
 }
-.shipping-hero h1 { margin-top: var(--space-4); margin-bottom: var(--space-2); }
+.shipping-hero h1 { margin-top: var(--space-3); margin-bottom: var(--space-2); }
 
 .shipping-courier-grid {
   display: grid;

@@ -4,12 +4,12 @@
 
 .custom-hero {
   text-align: center;
-  padding: var(--space-16) 0 var(--space-10);
+  padding: var(--space-8) 0 var(--space-6);
   background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-parchment) 100%);
 }
 
 .custom-hero h1 {
-  margin-top: var(--space-4);
+  margin-top: var(--space-3);
   margin-bottom: var(--space-2);
 }
 
@@ -182,7 +182,7 @@
   }
 
   .custom-hero {
-    padding: var(--space-12) 0 var(--space-8);
+    padding: var(--space-6) 0 var(--space-4);
   }
 
 }

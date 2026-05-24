@@ -112,17 +112,17 @@ export default function Home() {
               </p>
               <div className="heritage-awards">
                 <div className="heritage-award">
-                  <span className="heritage-award__icon">🏆</span>
-                  <div>
-                    <strong>Poompuhar Award</strong>
-                    <p>Tamil Nadu State Recognition</p>
-                  </div>
-                </div>
-                <div className="heritage-award">
                   <span className="heritage-award__icon">📍</span>
                   <div>
                     <strong>GI Tag — 2021</strong>
                     <p>Geographical Indication Certified</p>
+                  </div>
+                </div>
+                <div className="heritage-award">
+                  <span className="heritage-award__icon">🏆</span>
+                  <div>
+                    <strong>Poompuhar Award</strong>
+                    <p>Tamil Nadu State Recognition</p>
                   </div>
                 </div>
               </div>
