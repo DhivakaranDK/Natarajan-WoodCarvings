@@ -1,4 +1,5 @@
 import type { Product } from '../data/products';
+import { PRIMARY_CONTACT } from '../data/contactConfig';
 import './ProductCard.css';
 
 interface ProductCardProps {
@@ -34,7 +35,7 @@ export default function ProductCard({ product, onClick, index }: ProductCardProp
         <h3 className="product-card__name">{product.name}</h3>
         <p className="product-card__desc">{product.description}</p>
         <a
-          href={`https://wa.me/919092342219?text=${encodeURIComponent(waMsg)}`}
+          href={`https://wa.me/91${PRIMARY_CONTACT.raw}?text=${encodeURIComponent(waMsg)}`}
           className="btn btn-whatsapp product-card__cta"
           target="_blank"
           rel="noopener noreferrer"

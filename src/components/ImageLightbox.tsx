@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
+import { PRIMARY_CONTACT } from '../data/contactConfig';
 import './ImageLightbox.css';
 
 interface LightboxProps {
@@ -63,7 +64,7 @@ export default function ImageLightbox({ images, currentIndex, isOpen, onClose, o
           <span className="lightbox__counter">{currentIndex + 1} / {images.length}</span>
           {productName && <span className="lightbox__name">{productName}</span>}
           <a
-            href={`https://wa.me/919092342219?text=${encodeURIComponent(waMsg)}`}
+            href={`https://wa.me/91${PRIMARY_CONTACT.raw}?text=${encodeURIComponent(waMsg)}`}
             className="btn btn-whatsapp btn-sm"
             target="_blank"
             rel="noopener noreferrer"

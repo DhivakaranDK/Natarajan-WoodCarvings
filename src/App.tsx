@@ -39,7 +39,7 @@ export default function App() {
     <HelmetProvider>
       <BrowserRouter>
         <Helmet>
-          <title>Natarajan WoodCarvings® — Premium Handcarved Wooden Statues Since 1985</title>
+          <title>Natarajan WoodCarvings — Premium Handcarved Wooden Statues Since 1985</title>
           <meta name="description" content="Premium handcarved wooden statues and panels from Kallakurichi, Tamil Nadu. GI-tagged craft, Poompuhar Award winner. Deity statues, wall mounts, custom orders. Exported worldwide since 1985." />
           <meta name="keywords" content="wood carving, wooden statues, handcrafted, Tamil Nadu, Kallakurichi, GI tag, deity statues, Natarajan WoodCarvings, Poompuhar Award" />
           <link rel="canonical" href="https://www.natarajanwoodcarvings.com" />

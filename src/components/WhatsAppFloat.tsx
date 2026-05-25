@@ -1,9 +1,10 @@
+import { PRIMARY_CONTACT } from '../data/contactConfig';
 import './WhatsAppFloat.css';
 
 export default function WhatsAppFloat() {
   return (
     <a
-      href="https://wa.me/919092342219?text=Hello%20Natarajan%20WoodCarvings!%20I%20am%20interested%20in%20your%20handcrafted%20wooden%20statues."
+      href={`https://wa.me/91${PRIMARY_CONTACT.raw}?text=Hello%20Natarajan%20WoodCarvings!%20I%20am%20interested%20in%20your%20handcrafted%20wooden%20statues.`}
       className="whatsapp-float"
       target="_blank"
       rel="noopener noreferrer"

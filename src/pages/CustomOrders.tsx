@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { PRIMARY_CONTACT } from '../data/contactConfig';
 import './CustomOrders.css';
 
 const statueTypes = [
@@ -146,7 +147,7 @@ export default function CustomOrders() {
     if (!validateContactStep()) return;
 
     const msg = generateWhatsAppMsg();
-    window.open(`https://wa.me/919092342219?text=${encodeURIComponent(msg)}`, '_blank');
+    window.open(`https://wa.me/91${PRIMARY_CONTACT.raw}?text=${encodeURIComponent(msg)}`, '_blank');
   };
 
   return (

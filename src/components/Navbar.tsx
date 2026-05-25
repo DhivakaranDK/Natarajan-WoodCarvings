@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { PRIMARY_CONTACT } from '../data/contactConfig';
 import './Navbar.css';
 
 const navLinks = [
@@ -36,7 +37,7 @@ export default function Navbar() {
           <img src="/images/logo.png" alt="Natarajan WoodCarvings Logo" className="navbar__logo-img" />
           <div className="navbar__logo-text">
             <span className="navbar__brand">Natarajan</span>
-            <span className="navbar__sub">WoodCarvings®</span>
+            <span className="navbar__sub">WoodCarvings</span>
             <span className="navbar__since">Since 1985</span>
           </div>
         </Link>
@@ -54,7 +55,7 @@ export default function Navbar() {
           ))}
           <li className="navbar__links-cta">
             <a
-              href="https://wa.me/919092342219?text=Hello%20Natarajan%20WoodCarvings!%20I%20am%20interested%20in%20your%20products."
+              href={`https://wa.me/91${PRIMARY_CONTACT.raw}?text=Hello%20Natarajan%20WoodCarvings!%20I%20am%20interested%20in%20your%20products.`}
               className="btn btn-whatsapp"
               target="_blank"
               rel="noopener noreferrer"

@@ -1,11 +1,11 @@
 import { type FormEvent, useState } from 'react';
+import { CONTACT_NUMBERS, PRIMARY_CONTACT, CONTACT_EMAIL } from '../data/contactConfig';
 import './Contact.css';
 
 const EMAILJS_ENDPOINT = 'https://api.emailjs.com/api/v1.0/email/send';
 const EMAILJS_SERVICE_ID = 'service_1e2yyme';
 const EMAILJS_TEMPLATE_ID = 'template_aedt71e';
 const EMAILJS_PUBLIC_KEY = 'PnPPyJPr5dXsCgfqb';
-const CONTACT_EMAIL = 'natarajanwoodcarvings@gmail.com';
 
 const ICONS = {
   phone: '\u{1F4DE}',
@@ -194,7 +194,7 @@ export default function Contact() {
                 <span className="contact-info-icon">{ICONS.address}</span>
                 <div>
                   <h4>Workshop Address</h4>
-                  <p>Anna Nagar East, Kallakurichi<br />Tamil Nadu 606202, India</p>
+                  <p>25A, 11, Anna Nagar, Kallakurichi<br />Tamil Nadu 606202, India</p>
                 </div>
               </div>
 
@@ -202,7 +202,13 @@ export default function Contact() {
                 <span className="contact-info-icon">{ICONS.phone}</span>
                 <div>
                   <h4>Phone / WhatsApp</h4>
-                  <p><a href="tel:+919092342219">+91 90923 42219</a></p>
+                  <div className="contact-phones-list" style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                    {CONTACT_NUMBERS.map(num => (
+                      <p key={num.raw} style={{ margin: 0 }}>
+                        <a href={`tel:+91${num.raw}`}>{num.formatted}</a>
+                      </p>
+                    ))}
+                  </div>
                 </div>
               </div>
 
@@ -223,7 +229,7 @@ export default function Contact() {
               </div>
 
               <a
-                href="https://wa.me/919092342219?text=Hello!%20I%20want%20to%20know%20more%20about%20your%20wood%20carvings."
+                href={`https://wa.me/91${PRIMARY_CONTACT.raw}?text=Hello!%20I%20want%20to%20know%20more%20about%20your%20wood%20carvings.`}
                 className="btn btn-whatsapp btn-lg contact-wa-btn"
                 target="_blank"
                 rel="noopener noreferrer"
