@@ -515,8 +515,9 @@
 
 .home-slider__watermark {
   position: absolute;
-  right: var(--space-4);
-  bottom: var(--space-4);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 3;
   font-size: 0.62rem;
   letter-spacing: 1.4px;
