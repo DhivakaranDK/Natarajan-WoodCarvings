@@ -34,7 +34,7 @@ export default function Navbar() {
       {isOpen && <div className="navbar__overlay" onClick={() => setIsOpen(false)}></div>}
       <div className="navbar__inner container">
         <Link to="/" className="navbar__logo" id="navbar-logo">
-          <img src="/images/logo.png" alt="Natarajan WoodCarvings Logo" className="navbar__logo-img" />
+          <img src="/images/logo-source/logo.png" alt="Natarajan WoodCarvings Logo" className="navbar__logo-img" />
           <div className="navbar__logo-text">
             <span className="navbar__brand">Natarajan</span>
             <span className="navbar__sub">WoodCarvings</span>
