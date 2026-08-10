@@ -517,6 +517,11 @@
   height: 100%;
   object-fit: contain; /* Show the entire image in full view */
   transition: transform 0.5s ease;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  pointer-events: none;
 }
 
 .home-slider:hover .home-slider__img {
