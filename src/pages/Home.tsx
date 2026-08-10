@@ -120,7 +120,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero" id="hero-section">
         <div className="hero__bg">
-          <img src="/images/hero-bg-custom.png" alt="Natarajan WoodCarvings Workshop" className="hero__bg-img" />
+          <img src="/images/hanuman.png" alt="Natarajan WoodCarvings Workshop" className="hero__bg-img" />
           <div className="hero__bg-overlay"></div>
         </div>
         <div className="container hero__content">
