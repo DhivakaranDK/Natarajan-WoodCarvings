@@ -79,6 +79,8 @@ function HomeSlider() {
   return (
     <div
       className="home-slider"
+      onContextMenu={(e: any) => e.preventDefault()}
+      onDragStart={(e: any) => e.preventDefault()}
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
@@ -99,7 +101,7 @@ function HomeSlider() {
       <div className="home-slider__track" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {slideImages.map((src, index) => (
           <div key={index} className="home-slider__slide">
-            <img src={src} alt={`Wood Carving Showcase ${index + 1}`} className="home-slider__img" />
+            <img src={src} alt={`Wood Carving Showcase ${index + 1}`} className="home-slider__img" draggable={false} />
           </div>
         ))}
       </div>
