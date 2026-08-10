@@ -6,15 +6,15 @@ import { PRIMARY_CONTACT } from '../data/contactConfig';
 import './Home.css';
 
 const slideImages = [
-  '/images/slides/IMG_20260524_223236.png',
+  '/images/slides/IMG_20260524_230309.png',
   '/images/slides/IMG_20260524_223630.png',
   '/images/slides/IMG_20260524_223724.png',
   '/images/slides/IMG_20260524_223750.png',
-  '/images/slides/IMG_20260524_223941.png',
   '/images/slides/IMG_20260524_224030.png',
   '/images/slides/IMG_20260524_224442.png',
   '/images/slides/IMG_20260524_225228.png',
-  '/images/slides/IMG_20260524_230309.png',
+  '/images/slides/IMG_20260524_223236.png',
+  '/images/slides/IMG_20260524_223941.png'
 ];
 
 const ganeshaStatIcon = '/images/icons/ganesha-photo-icon.png';
