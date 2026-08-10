@@ -7,7 +7,7 @@ import './Home.css';
 
 const slideImages = [
   '/images/slides/IMG_20260524_230309.png',
-  '/images/slides/masterpiece.png'
+  '/images/slides/masterpiece.png',
   '/images/slides/IMG_20260524_223630.png',
   '/images/slides/IMG_20260524_223724.png',
   '/images/slides/IMG_20260524_223750.png',
@@ -15,7 +15,9 @@ const slideImages = [
   '/images/slides/IMG_20260524_224442.png',
   '/images/slides/IMG_20260524_225228.png',
   '/images/slides/IMG_20260524_223236.png',
-  '/images/slides/IMG_20260524_223941.png'
+  '/images/slides/IMG_20260524_223941.png',
+  '/images/slides/GI tag certificate-1.png',
+  '/images/slides/GI tag certificate-2.png'
 ];
 
 const ganeshaStatIcon = '/images/icons/ganesha-photo-icon.png';
