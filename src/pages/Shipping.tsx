@@ -78,10 +78,9 @@ export default function Shipping() {
             <div className="shipping-info-card">
               <h4>🇮🇳 Domestic (India)</h4>
               <ul>
-                <li>Free shipping on orders above ₹25,000</li>
-                <li>Delivery within 3–7 business days</li>
+                <li>Delivery within 3–5 business days</li>
                 <li>Secure advance payment confirmation before dispatch</li>
-                <li>Real-time tracking provided</li>
+                <li>Real-time tracking provided by Courier Services</li>
               </ul>
             </div>
             <div className="shipping-info-card">
@@ -90,7 +89,6 @@ export default function Shipping() {
                 <li>Shipped through trusted international courier services</li>
                 <li>Delivery within 5–14 business days</li>
                 <li>Customs documentation handled by us</li>
-                <li>Insurance available for high-value orders</li>
               </ul>
             </div>
             <div className="shipping-info-card">
