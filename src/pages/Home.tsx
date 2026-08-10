@@ -102,6 +102,7 @@ function HomeSlider() {
         {slideImages.map((src, index) => (
           <div key={index} className="home-slider__slide">
             <img src={src} alt={`Wood Carving Showcase ${index + 1}`} className="home-slider__img" draggable={false} />
+            <span className="home-slider__watermark" aria-hidden="true">Natarajan woodvings</span>
           </div>
         ))}
       </div>
