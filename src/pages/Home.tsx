@@ -26,7 +26,7 @@ const stats = [
   { value: 40, suffix: '+', label: 'Years of Heritage', icon: '\uD83C\uDFDB\uFE0F' },
   { value: 10000, suffix: '+', label: 'Statues Crafted', iconSrc: ganeshaStatIcon },
   { value: 500, suffix: '+', label: 'Statue Varieties', iconSrc: ganeshaStatIcon },
-  { value: 50, suffix: '+', label: 'Countries Shipped', icon: '\uD83C\uDF0D' },
+  { value: 10, suffix: '+', label: 'Countries Shipped', icon: '\uD83C\uDF0D' },
 ];
 
 const featuredProducts = products.slice(0, 6);
